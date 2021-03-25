@@ -1,0 +1,90 @@
+% !TeX TS-program = xelatex
+
+\documentclass[12pt,aspectratio=169]{beamer}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{subfig}
+
+\setsansfont{EB Garamond}
+\definecolor{primarycolor}{RGB}{0, 96, 157}
+
+\setbeamertemplate{itemize item}{\color{primarycolor}$\bullet$}
+\setbeamertemplate{itemize subitem}{\color{primarycolor}$\blacktriangleright$}
+
+\usepackage{setspace}
+\setstretch{1.3}
+
+\captionsetup{
+	format=plain,
+	justification=raggedright,
+	singlelinecheck=false,
+	font={normalsize,color=primarycolor},
+	labelfont={color=primarycolor},
+	labelsep=space,
+	skip=0pt
+}
+
+\title{Boletim de Conjuntura Econômica do Tocantins 2020}
+\subtitle{v 9, nº1}
+\author{PET Economia}
+\institute{Universidade Federal do Tocantins}
+\date{26/03/2021}
+
+\begin{document}
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{background canvas}{bg=primarycolor}
+\setbeamercolor{normal text}{fg=white}
+\usebeamercolor[fg]{normal text}
+\begin{frame}
+    \begin{tikzpicture}[overlay]
+        \node[anchor=center] at (3,-3){\includegraphics[width=7cm]{bg.pdf}};
+    \end{tikzpicture}
+    \titlepage
+\end{frame}
+
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{title}{fg=red}
+\usebeamercolor[fg]{normal text}
+\setbeamercolor{frametitle}{fg=primarycolor,bg=white}
+
+\begin{frame}  
+\frametitle{Introdução}
+\begin{itemize}
+\item O Boletim é uma publicação semestral
+\item Todo o processo de construção está disponível no GitHub
+\item Repositório \url{https://github.com/peteconomia/boletim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Panorama Econômico}
+    \begin{itemize}
+        \item XXXX
+        \item YYYY
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Contas Públicas Estadual}
+    \begin{itemize}
+        \item XXXX
+        \item YYYY
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Contas Públicas Estadual}
+    \begin{figure}%
+        \centering
+        \subfloat[\centering Despesa com pessoal / RCL]{{\includegraphics[width=.45\textwidth]{figs/desp_pessoal_rcl-1.pdf} }}%
+        \qquad
+        \subfloat[\centering Dívida Consolidada / RCL]{{\includegraphics[width=.45\textwidth]{figs/divida_rcl-1.pdf} }}%
+    \end{figure}
+\end{frame}
+
+\end{document}
